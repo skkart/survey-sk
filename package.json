@@ -1,0 +1,19 @@
+{
+  "name": "survey-sk",
+  "version": "1.0.0",
+  "description": "Simple React-Node based app to create survey, send email to clients and collect there feedback",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skkart/survey-sk.git"
+  },
+  "author": "skkart",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skkart/survey-sk/issues"
+  },
+  "homepage": "https://github.com/skkart/survey-sk#readme"
+}
