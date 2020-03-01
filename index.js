@@ -1,9 +1,11 @@
-const express = require('express'); // Common modules syntax 'require' -- node still uses it
+// Common modules syntax 'require' -- node still uses it
+const express = require('express');
 const mangoose = require('mongoose');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
 const keys = require('./config/keys');
 const bodyParser = require('body-parser');
+
 // Load mongoos models
 require('./models/User');
 require('./models/Survey');
@@ -27,7 +29,7 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-
+// ADD all routes for node app
 require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
 require('./routes/surveyRoutes')(app);
@@ -43,5 +45,6 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-const PORT = process.env.PORT || 5000; // Start server to listen to port 5000
+// Start server to listen to port 5000
+const PORT = process.env.PORT || 5000;
 app.listen(PORT);
