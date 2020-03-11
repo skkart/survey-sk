@@ -2,7 +2,8 @@
 import 'materialize-css/dist/css/materialize.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Provider} from 'react-redux'; // provider is a component that makes the store accessinle to all cmpt in app
+// provider is a component that makes the store accessable to all cmpt in app
+import {Provider} from 'react-redux';
 import {createStore, applyMiddleware} from 'redux';
 import reduxThunk from 'redux-thunk';
 
@@ -10,9 +11,8 @@ import App from './components/App';
 import reducers from './reducers';
 
 import axois from 'axios';
-window.axios = axois;
 
-
+// Initilize store
 const store = createStore(reducers, {}, applyMiddleware(reduxThunk));
 
 ReactDOM.render(
