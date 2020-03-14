@@ -1,3 +1,4 @@
+// Helpers for Email validation
 export default (emails) => {
   const emailRegex = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
 
