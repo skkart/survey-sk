@@ -1,5 +1,5 @@
-import axios from 'axios';
 import {FETCH_USER, FETCH_SURVEYS} from "./types";
+import axios from 'axios';
 
 //Action creator
 export const fetchUser = () => async dispatch => {
