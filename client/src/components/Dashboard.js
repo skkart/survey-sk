@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import SurveryList from './surveys/SurveyList'
 
+// Page after Oauth success
 const Dashboard = () => {
   return (
     <div>
