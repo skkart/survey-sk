@@ -5,6 +5,7 @@ import Payments from './Payments'
 
 class Header extends Component {
   renderContent () {
+    // Check the user is Oauth with google
     switch (this.props.auth) {
       case null:
         return;

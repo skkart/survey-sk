@@ -6,6 +6,7 @@ import * as actions from '../actions'
 
 class Payments extends Component {
   render () {
+    // Configure Payment using stripe gateway
     return (
       <StripeCheckout
         name="Survey House"

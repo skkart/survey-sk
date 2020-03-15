@@ -10,6 +10,7 @@ import SurveyNew from './surveys/SurveyNew'
 
 class App extends Component {
   componentDidMount () {
+    // On Start, Fetch User Info
     this.props.fetchUser();
   }
 
