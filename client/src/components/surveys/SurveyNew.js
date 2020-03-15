@@ -1,9 +1,9 @@
-// This component shows form & review
 import React, {Component} from 'react';
 import SurveyForm from './SurveyForm';
 import SurveyReview from "./SurveryFormReview";
 import {reduxForm} from 'redux-form';
 
+// This component shows form & review
 class SurveyNew extends Component {
   state = {showFormReview: false};
 

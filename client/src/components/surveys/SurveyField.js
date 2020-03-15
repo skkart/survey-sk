@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Every field component for survey Form
 export default ({input, label, meta: {error, touched}}) => {
   return (
     <div>
